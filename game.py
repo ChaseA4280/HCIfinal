@@ -124,7 +124,7 @@ class AccessibilitySettings:
         guidance_text = font.render(f"Guidance Mode: {'ON' if self.guidance_mode else 'OFF'}", True, COLORS['TEXT'])
         surface.blit(guidance_text, (menu_x + 30, y_pos))
         guidance_help = small_font.render("Press G to toggle - Shows path to food", True, COLORS['TEXT'])
-        surface.blit(guidance_help, (menu_x + 30, y_pos + 30))
+        surface.blit(guidance_help, (menu_x + 30, y_pos + 30))  
         y_pos += spacing + 30
         
         # Alternative Controls
@@ -143,7 +143,7 @@ class AccessibilitySettings:
         
         # Close menu instructions
         close_text = small_font.render("Press TAB to close this menu", True, COLORS['TEXT'])
-        surface.blit(close_text, (menu_x + (menu_width - close_text.get_width()) // 2, menu_y + menu_height - 40))
+        surface.blit(close_text, (menu_x + (menu_width - close_text.get_width()) // 2, menu_y + menu_height - 300))
 
 class Snake:
     def __init__(self):
