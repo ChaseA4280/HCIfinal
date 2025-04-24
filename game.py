@@ -124,7 +124,7 @@ class AccessibilitySettings:
         guidance_text = font.render(f"Guidance Mode: {'ON' if self.guidance_mode else 'OFF'}", True, COLORS['TEXT'])
         surface.blit(guidance_text, (menu_x + 30, y_pos))
         guidance_help = small_font.render("Press G to toggle - Shows path to food", True, COLORS['TEXT'])
-        surface.blit(guidance_help, (menu_x + 30, y_pos + 30))
+        surface.blit(guidance_help, (menu_x + 30, y_pos + 30))  
         y_pos += spacing + 30
         
         # Alternative Controls
