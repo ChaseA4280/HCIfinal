@@ -142,8 +142,9 @@ class AccessibilitySettings:
         y_pos += spacing + 30
         
         # Close menu instructions
-        close_text = small_font.render("Press TAB to close this menu", True, COLORS['TEXT'])
-        surface.blit(close_text, (menu_x + (menu_width - close_text.get_width()) // 2, menu_y + menu_height - 40))
+        smaller_font = pygame.font.SysFont(None, 18)
+        close_text = smaller_font.render("Press TAB to close this menu", True, COLORS['TEXT'])
+        surface.blit(close_text, (menu_x + (menu_width - close_text.get_width()) // 2 + 150, menu_y + menu_height - 50))
 
 class Snake:
     def __init__(self):
